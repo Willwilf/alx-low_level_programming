@@ -5,21 +5,21 @@
  */
 int main(void)
 {
-	int intType;
-	float floatType;
-	char charType;
-	long int longintType;
-	long long longlongType;
+	char a;
+	int b;
+	long int c;
+	long long d;
+	float e;
 
 	/**
 	 *sizeof evaluates the size of the variable
 	 */
 
-	printf("size of int: %zu bytes \n", sizeof(intType));
-	printf("size of float: %zu bytes \n", sizeof(floatType));
-	printf("size of char: %zu bytes \n", sizeof(charType));
-	printf("size of long int: %zu bytes \n", sizeof(longintType));
-	printf("size of long long: %zu bytes \n", sizeof(longlongType));
+	printf("size of char: %zu bytes \n", sizeof(a));
+	printf("size of int: %zu bytes \n", sizeof(b));
+	printf("size of long int: %zu bytes \n", sizeof(c));
+	printf("size of long long: %zu bytes \n", sizeof(d));
+	printf("size of float: %zu bytes \n", sizeof(e));
 
 	return (0);
 }
