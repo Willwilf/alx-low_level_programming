@@ -6,15 +6,17 @@
  */
 int _strlen_recursion(char *s)
 {
-	int len
+int count;
 
-	if (*s == '\0')
-	{
-		return (0);
-	}
-	else
-	{
-		len = 1 + _strlen_recursion(s + 1);
-	}
-	return (len);
+  /* check if end of string */
+if (*s == '\0')
+{
+	return (0);
+}
+else
+{
+	count = 1 + _strlen_recursion(s + 1);
+}
+
+return (count);
 }
