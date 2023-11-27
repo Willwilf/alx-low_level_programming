@@ -5,17 +5,18 @@
  * Return: The factorial of n
  */
 int factorial(int n)
-
 {
-	int n;
+/* n! = n * (n-1)!; */
 
-	if (n < 0)
-	{
-		return (-1);
-	}
-	if (n == 0 || n == 1)
-	{
-		return (1);
-	}
-	return (n * factorial(n - 1));
+/* define base case */
+if (n < 0)
+{
+return (-1);
+}
+if (n == 0 || n == 1)
+{
+return (1);
+}
+/* End of base case */
+return (n * factorial(n - 1));
 }
